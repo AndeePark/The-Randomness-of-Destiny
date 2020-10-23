@@ -21,7 +21,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 #List of Features
 
 1. Generation of random game sets or events
-Some life turning points can be actively chosen by the player, while some life events are random - reflecting the uncontrollable side of life. random() function will be utilized to generate determinants such as gender, race and living era.
+ - Some life turning points can be actively chosen by the player, while some life events are random - reflecting the uncontrollable side of life. random() function will be          utilized to generate determinants such as gender, race and living era.
 
 2. Data structures for storing game status
  - Int: Game Stage (e.g. Born: stage 0, Schooling: stage 1, and so on) + Option Choice (user input number for choosing different path)
