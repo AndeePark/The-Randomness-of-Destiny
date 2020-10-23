@@ -8,7 +8,7 @@ FENG Jiayuan 3035552648
  
 #basic description
  
- Game background
+Game background and Rules
  
 Live incorporates elements of certainties and uncertainties. While you are the controller of your life, some things are chosen randomly out of your control. Hope you enjoy the life in this game, as well as your real life.
 
