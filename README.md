@@ -57,7 +57,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 
     1. **makeTrack** includes the story flow of this game. After **selectTrack** in Me file executed, **Lifetrack** will process following the story flow.
     
-    2. **Lifetrack** also details including the descriptions of options given to the player and pre-determined probabilities for checking whether the player is infected.
+    2. **Lifetrack** also details including the descriptions of options given to the player and the pre-determined results of each option.
   
   
  - Code Requirement Satisfied
@@ -66,7 +66,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     1. Generation of random game sets or events
     
-       **selectTrack** : give random number to decide the endings of the game(infected or not infected).
+       **selectTrack** : give random number to decide the endings of the game.
     
     2. Data structures for storing game status
     
@@ -86,7 +86,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     6. Proper indentation and naming styles
     
-       The variables in the files are related to their actual meaning.
+       The variables in the files are related to their actual meaning. The indentation is used to clearify the relevant relations of each segement.
     
     7. In-code documentation
     
@@ -97,11 +97,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
      1. **<time.h>**
      
-        **<time.h>** is to get the system time, used in function **save** in **Player.cpp**. This helps to distinguish the save status.
-        
-     2. **<utility.h>**
-        
-        **<time.h>** is to build **pair** to connect the item with the probability of preventing virus, used in **items.h**. 
+        **<time.h>** is to get the system time, used in function **save** in **player.cpp**. This helps to distinguish the save status.
 
 
 ## Compilation and execution instructions
@@ -120,12 +116,12 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 
  - **FENG Jiayuan**
  
-   A junior majoring in QFin and minoring in CS, working on 
+   A junior majoring in QFin and minoring in CS, working on the whole logical design, function definition and debugging.
 
  
  - **ZHENG Jianxing**
   
-   A junior majoring in EF, working on 
+   A junior majoring in EF, working on the lifetrack.cpp file to construct the storyline and create the explanation video.
 
 
  
