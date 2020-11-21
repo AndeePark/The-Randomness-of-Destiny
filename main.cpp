@@ -2,8 +2,6 @@
 #include <string>
 #include <iomanip>
 #include <fstream>
-#include <stdio.h> 
-#include <stdlib.h>
 #include <time.h>
 #include "player.h"
 #include "lifetracks.h"
