@@ -36,28 +36,28 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 
  - Functions Used 
    
-   * **In Me file**
+   * **In Player files**
    
      This file is designed to store the basic information from the player, including **Namegiving**, **Eventselction**, **Save**, and **Load**. 
 
-    1. Function **Namegiving** is to indentify different records, which is the name of the character in the game. 
+    1. Function **giveName** is to indentify different records, which is the name of the character in the game. 
 
-    2. Function **Eventselction** is the main part--the process of the game, which is to process the choice entered by the player.
+    2. Function **selectTrack** is the main part--the process of the game, which is to process the choice entered by the player.
     
-    3. Function **PrintEvent** is to print the current event and branches.
+    3. Function **printTrack** is to print the current event and branches.
 
-    4. Function **Save** is to write the new GameStatus in Me file. 
+    4. Function **save** is to write the new GameStatus in Me file. 
 
-    5. Function **Load** is to read the record in Me file. 
+    5. Function **load** is to read the record in Me file. 
 
    
-   * **In Events files**
+   * **In Lifetrack files**
 
      These files are designed to store the events and behavior selctions in this games. The functions included are similar. 
 
-    1. **InitEvent** includes the story flow of this game. After **Eventselction** in Me file executed, **Event** will process following the story flow.
+    1. **makeTrack** includes the story flow of this game. After **selectTrack** in Me file executed, **Lifetrack** will process following the story flow.
     
-    2. **Event** also details including the descriptions of options given to the player and pre-determined probabilities for checking whether the player is infected.
+    2. **Lifetrack** also details including the descriptions of options given to the player and pre-determined probabilities for checking whether the player is infected.
   
   
  - Code Requirement Satisfied
@@ -66,15 +66,15 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     1. Generation of random game sets or events
     
-       **Eventselction** : give random number to decide the endings of the game(infected or not infected).
+       **selectTrack** : give random number to decide the endings of the game(infected or not infected).
     
     2. Data structures for storing game status
     
-       **Event** : use structure to store the content of the story sections.
+       **Lifetrack** : use structure to store the content of the story sections.
     
     3. Dynamic memory management
       
-       **Save** and **Load** : use records to save or load different game status.
+       **save** and **load** : use records to save or load different game status.
     
     4. File input/output (e.g., for loading/saving game status)
     
@@ -90,14 +90,14 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     7. In-code documentation
     
-       **Event** : read and write across files.
+       **Lifetrack** : read and write across files.
     
     
  - Non-STL used
     
      1. **<time.h>**
      
-        **<time.h>** is to get the system time, used in function **Save** in **Me.cpp**. This helps to distinguish the save status.
+        **<time.h>** is to get the system time, used in function **save** in **Player.cpp**. This helps to distinguish the save status.
         
      2. **<utility.h>**
         
@@ -131,10 +131,10 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
  
 
 
-#List of Features
+## List of Features
 
 1. Generation of random game sets or events
- - Some life turning points can be actively chosen by the player, while some life events are random - reflecting the uncontrollable side of life. random() function will be          utilized to generate determinants such as gender, race and living era.
+ - Some life turning points can be actively chosen by the player, while some life events are random - reflecting the uncontrollable side of life. random() function will be utilized to generate determinants such as gender, race and living era.
 
 2. Data structures for storing game status
  - Int: Game Stage (e.g. Born: stage 0, Schooling: stage 1, and so on) + Option Choice (user input number for choosing different path)
