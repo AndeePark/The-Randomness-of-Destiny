@@ -36,7 +36,7 @@ Then, different scenarios will be presented. According to the descriptions, the 
 
  - Functions Used 
    
-   * **In Player files**
+   * **In player files**
    
      This file is designed to store the basic information from the player, including **giveName**, **selectTrack**, **save**, and **load**. 
 
@@ -51,7 +51,7 @@ Then, different scenarios will be presented. According to the descriptions, the 
     5. Function **load** is to read the record in the player file. 
 
    
-   * **In lifetrack files**
+   * **In lifetracks files**
 
      These files are designed to store the events and behavior selctions in this games. The functions included are similar. 
 
