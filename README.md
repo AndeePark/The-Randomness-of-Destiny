@@ -29,7 +29,7 @@ This is a life-simulation game which tracks the whole process of â€œbig thingsâ€
 
 Primarily, the player can choose a time background: Digital Ara or Ancient Ara. You will start your adventure now. In the digital ara, the player will experience a modern life. In the ancient ara, the player will experience a life in the far past.
 
-Then, different scenarios will be presented. According to the descriptions, the player should enter numbers indicating the choice. After selection, the outcome will be displayed and the next scenario will be followed. The player keeps choosing until the game ends. The game can end with a classic saying in <The Great Gatsby>, or end with a tragedy of car crash.
+Then, different scenarios will be presented. According to the descriptions, the player should enter numbers indicating the choice. After selection, the outcome will be displayed and the next scenario will be followed. The player keeps choosing until the game ends. The game can end with a classic saying in "The Great Gatsby", or end with a tragedy of car crash.
 
 
 ## Coding Requirements
