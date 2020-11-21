@@ -55,7 +55,7 @@ void Player::selectTrack(unsigned int n){
     // If there is nothing left and the game is ended 
     if (cont -> lifetracks.size() == 0){
         if (cont -> gameOver){
-            cout << "You DIED!" << endl;
+            cout << "The game ends here. Hope you have enjoyed your life!" << endl;
             exit(0);
         }
         // Select two random numbers to decide whether alive or dead by accident based on the "Randomness of Destiny"
