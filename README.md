@@ -1,22 +1,135 @@
 # Group 16 - "The-Randomness-of-Destiny"
 Text-based game group project in COMP2113
  
-#identification of group members
+#### Team Members:
+##### FENG Jiayuan 3035552648
+##### ZHENG Jianxing 3035532789
 
-ZHEN Jianxing 3035532789
-FENG Jiayuan 3035552648
- 
-#basic description
- 
-Game background and Rules
- 
+## **Outline**
+* [Game Introduction](#game-introduction)
+  - Background
+  - Game Rule
+* [Coding Requirements](#coding-requirements)
+  - Functions Used 
+  - Code Requirement Satisfied
+  - Non-STL used
+* [Group Introduction](#group-introduction)
+  - FENG Jiayuan
+  - ZHENG Jianxing
+  
+## Game Introduction
+
+ - Background
+
 Live incorporates elements of certainties and uncertainties. While you are the controller of your life, some things are chosen randomly out of your control. Hope you enjoy the life in this game, as well as your real life.
 
 This is a life-simulation game which tracks the whole process of “big things” in an individual’s life. By incorporating randomness and choices, it indicates that life is a mixture of choices and uncertainties. After playing this game, players will see different outcomes of his/her chosen life, and he/she can also play multiple times to see different choices and uncertainties will lead to any kind of results in life.
 
+ - Game Rule
+
 Primarily, players will be allocated a game background time randomly: Digital Century or Non-digital Century. They will start their adventure now.
 
 We will design five turning points in life. Birth, School, Work, Marriage and Death. At some stages, you can choose what kind of path you want to go, there are still some stages where you will be allocated a situation randomly, however.
+
+
+## Coding Requirements
+
+ - Functions Used 
+   
+   * **In Me file**
+   
+     This file is designed to store the basic information from the player, including **Namegiving**, **Eventselction**, **Save**, and **Load**. 
+
+    1. Function **Namegiving** is to indentify different records, which is the name of the character in the game. 
+
+    2. Function **Eventselction** is the main part--the process of the game, which is to process the choice entered by the player.
+    
+    3. Function **PrintEvent** is to print the current event and branches.
+
+    4. Function **Save** is to write the new GameStatus in Me file. 
+
+    5. Function **Load** is to read the record in Me file. 
+
+   
+   * **In Events files**
+
+     These files are designed to store the events and behavior selctions in this games. The functions included are similar. 
+
+    1. **InitEvent** includes the story flow of this game. After **Eventselction** in Me file executed, **Event** will process following the story flow.
+    
+    2. **Event** also details including the descriptions of options given to the player and pre-determined probabilities for checking whether the player is infected.
+  
+  
+ - Code Requirement Satisfied
+    
+      The functions listed below are examples. At least one function are satisfied relevant requirements.
+    
+    1. Generation of random game sets or events
+    
+       **Eventselction** : give random number to decide the endings of the game(infected or not infected).
+    
+    2. Data structures for storing game status
+    
+       **Event** : use structure to store the content of the story sections.
+    
+    3. Dynamic memory management
+      
+       **Save** and **Load** : use records to save or load different game status.
+    
+    4. File input/output (e.g., for loading/saving game status)
+    
+       **InitEvent** : use branch(pointers) to construct the story flow.
+    
+    5. Program codes in multiple files
+    
+       **3 header files** and **3 source files** are used in the program.
+    
+    6. Proper indentation and naming styles
+    
+       The variables in the files are related to their actual meaning.
+    
+    7. In-code documentation
+    
+       **Event** : read and write across files.
+    
+    
+ - Non-STL used
+    
+     1. **<time.h>**
+     
+        **<time.h>** is to get the system time, used in function **Save** in **Me.cpp**. This helps to distinguish the save status.
+        
+     2. **<utility.h>**
+        
+        **<time.h>** is to build **pair** to connect the item with the probability of preventing virus, used in **items.h**. 
+
+
+## Compilation and execution instructions
+
+ - **Compilation**
+
+   $ make main  
+ 
+ - **Execution**
+ 
+   $ ./main
+  
+
+
+## Team members
+
+ - **FENG Jiayuan**
+ 
+   A junior majoring in QFin and minoring in CS, working on 
+
+ 
+ - **ZHENG Jianxing**
+  
+   A junior majoring in EF, working on 
+
+
+ 
+
 
 #List of Features
 
