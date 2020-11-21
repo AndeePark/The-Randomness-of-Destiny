@@ -27,9 +27,9 @@ This is a life-simulation game which tracks the whole process of “big things�
 
  - Game Rule
 
-Primarily, players will be allocated a game background time randomly: Digital Century or Non-digital Century. They will start their adventure now.
+Primarily, the player will be allocated a game background time randomly: Digital Ara or Ancient Ara. You will start your adventure now.
 
-We will design five turning points in life. Birth, School, Work, Marriage and Death. At some stages, you can choose what kind of path you want to go, there are still some stages where you will be allocated a situation randomly, however.
+We designed five turning points in life. Birth, School, Work, Marriage and Death. At some stages, you can choose what kind of path you want to go, there are still some stages where you will be allocated a situation randomly, however.
 
 
 ## Coding Requirements
@@ -44,33 +44,34 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 
     2. Function **selectTrack** is the main part--the process of the game, which is to process the choice entered by the player.
     
-    3. Function **printTrack** is to print the current event and branches.
+    3. Function **printTrack** is to print the current life tracks and branches.
 
-    4. Function **save** is to write the new GameStatus in Me file. 
+    4. Function **save** is to output the new game status in the player file. 
 
-    5. Function **load** is to read the record in Me file. 
+    5. Function **load** is to read the record in the player file. 
 
    
-   * **In Lifetrack files**
+   * **In lifetrack files**
 
      These files are designed to store the events and behavior selctions in this games. The functions included are similar. 
 
-    1. **makeTrack** includes the story flow of this game. After **selectTrack** in Me file executed, **Lifetrack** will process following the story flow.
+    1. **makeTrack** includes the story flow of this game. After **selectTrack** in the player file executed, **lifetrack** will process following the story flow.
     
-    2. **Lifetrack** also details including the descriptions of options given to the player and the pre-determined results of each option.
+    2. **lifetrack** also details including the descriptions of options given to the player and the pre-determined results of each option.
   
   
  - Code Requirement Satisfied
     
-      The functions listed below are examples. At least one function are satisfied relevant requirements.
+      The functions listed below are just examples. At least one function are satisfied relevant requirements.
     
     1. Generation of random game sets or events
     
-       **selectTrack** : give random number to decide the endings of the game.
+       **selectTrack**: generate random numbers to decide the endings of the game.
+       **main**: generate the player's gender randomly.
     
     2. Data structures for storing game status
     
-       **Lifetrack** : use structure to store the content of the story sections.
+       **lifetrack** : use structure to store the content of the story sections.
     
     3. Dynamic memory management
       
@@ -78,11 +79,11 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     4. File input/output (e.g., for loading/saving game status)
     
-       **InitEvent** : use branch(pointers) to construct the story flow.
+       **makeTrack** : use branch(pointers) to construct the story flow.
     
     5. Program codes in multiple files
     
-       **3 header files** and **3 source files** are used in the program.
+       **2 header files** and **3 source files** are used in the program.
     
     6. Proper indentation and naming styles
     
@@ -90,7 +91,7 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
     
     7. In-code documentation
     
-       **Lifetrack** : read and write across files.
+       **lifetrack** : read and write across files.
     
     
  - Non-STL used
@@ -116,40 +117,10 @@ We will design five turning points in life. Birth, School, Work, Marriage and De
 
  - **FENG Jiayuan**
  
-   A junior majoring in QFin and minoring in CS, working on the whole logical design, function definition and debugging.
+   A junior majoring in QFin and minoring in CS, working on the whole logical design, function definition (lifetrack.h, player.cpp, player.h, main.cpp) and debugging.
 
  
  - **ZHENG Jianxing**
   
    A junior majoring in EF, working on the lifetrack.cpp file to construct the storyline and create the explanation video.
 
-
- 
-
-
-## List of Features
-
-1. Generation of random game sets or events
- - Some life turning points can be actively chosen by the player, while some life events are random - reflecting the uncontrollable side of life. random() function will be utilized to generate determinants such as gender, race and living era.
-
-2. Data structures for storing game status
- - Int: Game Stage (e.g. Born: stage 0, Schooling: stage 1, and so on) + Option Choice (user input number for choosing different path)
- - String: Descriptive Stories and Options
- - Boolean: A detective signal to check if the player has a saved game process or not
- - Array: stores the entire path of live, will be printed after death
-
-3. Dynamic memory management
- - InProgress file to save the game status the player choose to stay when he/she quits
- - Load file to reload the game status when the player reopen the game and continue his/her game from which he/she quits
-
-4. File input/output (e.g., for loading/saving game status/reading/displaying information)
- - After running the game, the system will detect if there is any file left for the last trial. If there is a file, the program will ask the play to choose “continue last life” or “a new life”.
- - Input: Player will input different numbers to go to different life path
- - Output: Display the chosen life path background information
-
-5. Program codes in multiple files
- - Function file: Each file saves the necessary function used in the game
- - Header file: to call the function in the main game script
- - Game progress file: to save the individual player’s game progress
- - Description file: to save descriptive information in the game 
- - Main program file: to incorporate all the function and descriptions needed and execution
