@@ -27,9 +27,9 @@ This is a life-simulation game which tracks the whole process of â€œbig thingsâ€
 
  - Game Rule
 
-Primarily, the player will be allocated a game background time randomly: Digital Ara or Ancient Ara. You will start your adventure now.
+Primarily, the player can choose a time background: Digital Ara or Ancient Ara. You will start your adventure now. In the digital ara, the player will experience a modern life. In the ancient ara, the player will experience a life in the far past.
 
-We designed five turning points in life. Birth, School, Work, Marriage and Death. At some stages, you can choose what kind of path you want to go, there are still some stages where you will be allocated a situation randomly, however.
+Then, different scenarios will be presented. According to the descriptions, the player should enter numbers indicating the choice. After selection, the outcome will be displayed and the next scenario will be followed. The player keeps choosing until the game ends. The game can end with a classic saying in <The Great Gatsby>, or end with a tragedy of car crash.
 
 
 ## Coding Requirements
@@ -38,7 +38,7 @@ We designed five turning points in life. Birth, School, Work, Marriage and Death
    
    * **In Player files**
    
-     This file is designed to store the basic information from the player, including **Namegiving**, **Eventselction**, **Save**, and **Load**. 
+     This file is designed to store the basic information from the player, including **giveName**, **selectTrack**, **save**, and **load**. 
 
     1. Function **giveName** is to indentify different records, which is the name of the character in the game. 
 
@@ -57,7 +57,7 @@ We designed five turning points in life. Birth, School, Work, Marriage and Death
 
     1. **makeTrack** includes the story flow of this game. After **selectTrack** in the player file executed, **lifetrack** will process following the story flow.
     
-    2. **lifetrack** also details including the descriptions of options given to the player and the pre-determined results of each option.
+    2. **lifetrack** includes details for the descriptions of options given to the player and the pre-determined results of each option.
   
   
  - Code Requirement Satisfied
@@ -98,7 +98,8 @@ We designed five turning points in life. Birth, School, Work, Marriage and Death
     
      1. **<time.h>**
      
-        **<time.h>** is to get the system time, used in function **save** in **player.cpp**. This helps to distinguish the save status.
+        **<time.h>** is to get the system time, used in function **save** in **player.cpp**. This helps to distinguish the save status. 
+        It is also used in random number generation as seeds in **main** and **player.cpp**.
 
 
 ## Compilation and execution instructions
