@@ -13,9 +13,11 @@ Text-based game group project in COMP2113
   - Functions Used 
   - Code Requirement Satisfied
   - Non-STL used
-* [Group Introduction](#group-introduction)
+* [Compilation and execution instructions](#Compilation and execution instructions)
+* [Group Introduction](#Team members)
   - FENG Jiayuan
   - ZHENG Jianxing
+* [List of Features](#List of Features)
   
 ## Game Introduction
 
