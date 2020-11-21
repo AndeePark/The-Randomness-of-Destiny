@@ -1,0 +1,28 @@
+Hey! Welcome to the Game: The Randomness of Destiny. You are going to experience a series of life events and random accidents. Please enter your name here:
+Hello Andy!
+You are born as a male.
+Please input choice numbers to choose for options (1 or 2). Enter "save" if you want to save the current status.
+
+You are at the Gate of Uncertainty. Now there are two huge magic doors in front of you. Each gate leads to a vitural world of uncertainty Now, it's time for you to choose. The gate on the left side shows "Digital World" and the gate on the right side shows "Ancient World".
+
+1. I am going to the Digital World.
+
+2. Ancient world is full of challenge, I would like to explore.
+
+You are born in a big family. The family has a long history and the ancesters are all famous artists and generals along different dynasty. Now, you are at the age of 16. According to the customer, you should choose your own future: to go to the barrack or start your arts career?
+
+1. I am a brave and strong man. I would like to go to the battleground and become the most famous general in the country.
+
+2. I want to follow my ancester's work, make the arts even greater.
+
+You start your general dream from the local barrack. After a long practice and practice, you are strong and brave full of power and energy. Now, the country needs you. In the peace era, your skill is to train the soilders and prepare for the uncertain attack. In the war era, you are the general leading the army. However, war is full of risk and you do not know the result before it. You can choose one of the era, which one would you like to choose? 
+
+1. War is bloody, although I am a soilder, I do not want to fight.
+
+2. I am born to be on the battleground. 
+
+Saved game status: Andy2020-11-21 19:21:56
+
+You are the general of the country. Although you are in the peaceful era, your army is the strongest around the world. Other states cannot attack the country even they plan to. As a spirit representative, your name is recorded in the history.
+
+"So we beat on, boats against the current, borne back ceaselessly into the past." -- <The Great Gatsby> 
