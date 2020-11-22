@@ -10,7 +10,6 @@ using std::vector;
 class Player{
 private:
     string name;
-    int gender;
     lifetrack *cont;
     lifetrack *root;
     string getTrack();
